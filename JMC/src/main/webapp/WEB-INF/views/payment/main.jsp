@@ -409,7 +409,7 @@ width: 100%;
         orderName: "토스 티셔츠 외 2건",                 // 주문명
         // 주문명 추후에 추가해야함
 //         successUrl: "http://localhost:8888/payment/success",  // 결제에 성공하면 이동하는 페이지(직접 만들어주세요)
-        successUrl: "http://localhost:8888/payment/paysuccess?name="+name
+        successUrl: "http://192.168.10.30:8888/payment/paysuccess?name="+name
         			+"&phone="+phone
         			+"&totalprice="+price
         			+"&loc="+loc

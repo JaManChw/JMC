@@ -95,23 +95,23 @@ a:visited {
 	
 	
 	<h2 style = "padding-top : 50px;">회원관리</h2>
-	<p><a href="<%=request.getContextPath() %>/admin/user/mg/list">회원 정보 수정</a><br></p>
-	<p><a href="<%=request.getContextPath() %>/admin/user/black/list">블랙리스트 관리</a><br><br></p>
+	<p><a class="userModify" href="<%=request.getContextPath()%>/admin/user/mg/list">회원 정보 수정</a><br></p>
+	<p><a class="blackManage" href="<%=request.getContextPath()%>/admin/user/black/list">블랙리스트 관리</a><br><br></p>
 	<h2>신고관리</h2>
-	<p><a href="<%=request.getContextPath() %>/admin/report/post/list">신고글 확인</a><br></p>
-	<p><a href="<%=request.getContextPath() %>/admin/report/meeting/list">모임 신고 확인</a><br></p>
-	<p><a href="<%=request.getContextPath() %>/admin/report/user/list">신고 계정 확인</a><br><br></p>
+	<p><a class="reportBoardCheck" href="<%=request.getContextPath()%>/admin/report/post/list">신고글 확인</a><br></p>
+	<p><a class="reportMeetingCheck" href="<%=request.getContextPath()%>/admin/report/meeting/list">모임 신고 확인</a><br></p>
+	<p><a class="reportUserCheck" href="<%=request.getContextPath()%>/admin/report/user/list">신고 계정 확인</a><br><br></p>
 	<h2>판매관리</h2>
-	<p><a href="<%=request.getContextPath() %>/admin/item/itemview/write">상품 등록</a><br></p>
-	<p><a href="<%=request.getContextPath() %>/admin/item/itemview/list">상품 삭제/수정</a><br></p>
-	<p><a href="<%=request.getContextPath() %>/admin/item/itemqna/list">상품 문의</a><br><br></p>
+	<p><a class="itemWrite" href="<%=request.getContextPath()%>/admin/item/itemview/write">상품 등록</a><br></p>
+	<p><a class="itemModify" href="<%=request.getContextPath()%>/admin/item/itemview/list">상품 삭제/수정</a><br></p>
+	<p><a class="itemQ" href="<%=request.getContextPath()%>/admin/item/itemqna/list">상품 문의</a><br><br></p>
 	<h2>고객센터관리</h2>
-	<p><a href="<%=request.getContextPath() %>/admin/main/boardCategory?boardOption=notice">공지사항 관리</a><br></p>
-	<p><a href="<%=request.getContextPath() %>/admin/main/boardCategory?boardOption=event">이벤트 관리</a><br></p>
-	<p><a href="<%=request.getContextPath() %>/admin/board/qna/list">Q & A 관리</a><br><br></p>
+	<p><a class="noticeManage" href="<%=request.getContextPath()%>/admin/main/boardCategory?boardOption=notice">공지사항 관리</a><br></p>
+	<p><a class="eventManage" href="<%=request.getContextPath()%>/admin/main/boardCategory?boardOption=event">이벤트 관리</a><br></p>
+	<p><a class="qnAManage" href="<%=request.getContextPath()%>/admin/board/qna/list">Q & A 관리</a><br><br></p>
 	
 	<div>
-	<a href="<%=request.getContextPath() %>/login/main">메인 페이지로</a>
+	<a href="<%=request.getContextPath()%>/login/main">메인 페이지로</a>
 	</div>
 	</div>
 	

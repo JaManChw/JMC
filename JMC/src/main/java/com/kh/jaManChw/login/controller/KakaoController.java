@@ -1,5 +1,6 @@
 package com.kh.jaManChw.login.controller;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
@@ -22,11 +23,18 @@ public class KakaoController {
 	@Autowired KakaoService kakaoService;
 	
 	@RequestMapping("/oauth/kakao")
-    public String login(@RequestParam("code") String code, HttpSession session,Model model) {
+    public String login(@RequestParam("code") String code, HttpSession session,Model model, HttpServletRequest req) {
     	
+		logger.info("접근 URL: {}", req.getRequestURL());
+		logger.info("접근 URL: {}", req.getRemoteHost() + req.getRemotePort());
+		logger.info("접근 URL HOST: {}", req.getRemoteHost());
+		logger.info("접근 URL PORT: {}", req.getRemotePort());
+		
     	// accessToken : 사용자 인증과 카카오 api 호출 권한부여 : 6시간 만료
     	// 사용자에 대한 정보가 담겨있다.
     	// 토큰에 담겨있는 정보가 해당 사용자의 정보가 맞는지 확인하고 회원가입 or로그인 시키고 DB에 저장한다.
+		
+		logger.info("code: {}",code);
         String access_Token = kakaoService.getAccessToken(code);
         logger.info("Controller access_Token: {}",access_Token);
        

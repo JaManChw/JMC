@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 
+
 <c:import url="../../main.jsp"/>
 
 <!-- include libraries(jQuery, bootstrap) -->
@@ -183,6 +184,9 @@ $(function() {
  	display:inline-block; 
 	width:92%;
 	height: 100px;
+}
+.itemWrite{
+	color:blue;
 }
 </style>
 

@@ -95,12 +95,15 @@ div.title{
 						</tr>
 					</table>
 					<c:if test="${qnADetail.Q_STATUS eq 'unprocessed'}">
-					<button onclick="location.href='./revise?questionno=${qnADetail.QUESTIONNO}&curPage=${curPage}'">수정</button>
-					<button onclick="location.href='./delete?questionno=${qnADetail.QUESTIONNO}&curPage=${curPage}'">삭제</button>
-					<button onclick="location.href='./list?curPage=${curPage}'">목록</button>
+						<c:if test="${qnADetail.USERNO eq userno}">
+							<button onclick="location.href='./revise?questionno=${qnADetail.QUESTIONNO}&curPage=${curPage}'">수정</button>
+							<button onclick="location.href='./delete?questionno=${qnADetail.QUESTIONNO}&curPage=${curPage}'">삭제</button>
+							<button onclick="location.href='./list?curPage=${curPage}'">목록</button>					
+						</c:if>
+						<button onclick="location.href='./list?curPage=${curPage}'">목록</button>
 					</c:if>
 					<c:if test="${qnADetail.Q_STATUS eq 'done'}">
-					<button onclick="location.href='./list?curPage=${curPage}'">목록</button>
+						<button onclick="location.href='./list?curPage=${curPage}'">목록</button>
 					</c:if>
 				</div>
 			</c:if>

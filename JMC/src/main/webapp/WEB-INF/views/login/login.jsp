@@ -146,7 +146,7 @@ div.idcheck_box{
  </form>
 	
 	<div class="kakaobtn">
- 		<a href="https://kauth.kakao.com/oauth/authorize?client_id=e711b32da569918789a178e0f371949d&redirect_uri=http://localhost:8888/oauth/kakao&response_type=code">
+ 		<a href="https://kauth.kakao.com/oauth/authorize?client_id=e711b32da569918789a178e0f371949d&redirect_uri=http://192.168.10.30:8888/oauth/kakao&response_type=code">
             <img src="/resources/image/kakao_login_medium_wide.png">
         </a>
 	</div>

@@ -38,7 +38,7 @@ public class NaverServiceImpl implements NaverService {
 		String clientId = "dn2raWizUA37TfJdvO2f";
 		
 		//애플리케이션 정보에 있는 로그인 오픈 API 서비스 환경 - 네이버 로그인 CallBack URL
-		String callBackURI= "http://localhost:8888/naverlogincallback";
+		String callBackURI= "http://192.168.10.30:8888/naverlogincallback";
 		String encodeType = "UTF-8";
 		
 		String redirectURI = null; 
